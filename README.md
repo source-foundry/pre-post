@@ -10,7 +10,7 @@ It supports the following:
 - Pre/post test source code specimen - dark on light
 - Pre/post test source code specimen - light on dark
 
-The text specimens are defined in HTML templates and can be easily modified to address other needs.  See the [Modify Text Specimen](#modify-text-specimen) documentation below for details.
+The text specimens are defined in HTML templates and can be easily modified to address other needs.  See the [Modify Template for Other Projects](https://github.com/source-foundry/pre-post#modify-template-for-other-projects) documentation below for details.
 
 ## Install
 
