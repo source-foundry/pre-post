@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+
+    <title>Hack Typeface Specimen - {{ extension }}</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/materialize.min.css') }}">
+
+    <!-- Hack CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+
+<nav class="z-depth-0">
+    <div class="nav-wrapper yellow accent-2">
+        <a href="#" class="brand-logo"></a>
+    </div>
+</nav>
+
+<body>
+    <div class="space-above"></div>
+
+    <div class="container">
+
+        <div class="page-header">
+            <h1 class="specimen-post-{{ variant }}-{{ extension }}">
+                <span class="title-size">Hack</span>
+            </h1>
+            <p class="lead tagline-size">
+                <span class="grey-text">{{ extension }} {{ variant }} Specimen</span>
+            </p>
+        </div>
+
+        <div class="huge specimen-post-{{ variant }}-{{ extension }}">AaBb</div>
+
+
+        <div class="row">
+            <form class="col s10">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textareaPre" class="materialize-textarea specimen-pre-{{ variant }}-{{ extension }}">Pack my box with five dozen liquor jugs</textarea>
+                        <label for="textarea1">Pre</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <form class="col s10">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textareaPost" class="materialize-textarea specimen-post-{{ variant }}-{{ extension }}">Pack my box with five dozen liquor jugs</textarea>
+                        <label for="textarea2">Post</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s10">
+                <select id="textSizeSelector">
+                    <option value="" disabled selected>Choose a text size (default = 12px)</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="24">24</option>
+                    <option value="30">30</option>
+                    <option value="36">36</option>
+                    <option value="48">48</option>
+
+                </select>
+                <label>Text size</label>
+            </div>
+        </div>
+
+
+        {% for size in sizes %}
+
+        <h2 class="section-header">
+            <a class="btn-flat btn-large teal lighten-5">{{ variant }} Pre {{ size }}</a>
+        </h2>
+        <div class="specimen-pre-{{ variant }}-{{ extension }} size{{ size }}">
+            <p>abcdefghijklmnopqrstuvwxyz 12345</p>
+            <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ 67890</p>
+            <p>{}[]()&lt;&gt;$*-+=/#_%^@\&amp;|~?&#39;&quot;`!,.;:</p>
+        </div>
+
+        <h2 class="section-header">
+            <a class="btn-flat btn-large teal lighten-5">{{ variant }} Post {{ size }}</a>
+        </h2>
+        <div class="specimen-post-{{ variant }}-{{ extension }} size{{ size }}">
+            <p>abcdefghijklmnopqrstuvwxyz 12345</p>
+            <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ 67890</p>
+            <p>{}[]()&lt;&gt;$*-+=/#_%^@\&amp;|~?&#39;&quot;`!,.;:</p>
+        </div>
+        <div class="space-below"></div>
+
+        {% endfor %}
+
+
+
+        <div class="space-above"></div>
+        <h2 class="section-header">Waterfall</h2>
+        <div>
+            <table class="sample_table">
+                {% for size in sizes %}
+
+                <tr>
+                    <td>{{ size }}:1</td>
+                    <td class="specimen-pre-{{ variant }}-{{ extension }} size{{ size }}">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890</td>
+                </tr>
+                <tr>
+                    <td>{{ size }}:2</td>
+                    <td class="specimen-post-{{ variant }}-{{ extension }} size{{ size }}">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890</td>
+                </tr>
+                
+                {% endfor %}
+            </table>
+        </div>
+
+
+
+        <div class="space-above"></div>
+        <h2 class="section-header">Test Source</h2>
+
+{% for size in sizes %}
+
+        <h2 class="section-header">
+            <a class="btn-flat btn-large teal lighten-5">Pre {{ size }}</a>
+        </h2>
+        <pre class="size{{ size }} light-code"><code class="specimen-pre-{{ variant }}-{{ extension }}"><span class="light-line-numbers">1</span>    // <span class="specimen-pre-italic-{{ extension }}">Nymphs blitz quick vex dwarf jog</span>
+<span class="light-line-numbers">2</span>    // <span class="specimen-pre-bold-{{ extension }}">Five quacking zephyrs jolt my wax bed</span>
+<span class="light-line-numbers">3</span>    // <span class="specimen-pre-bolditalic-{{ extension }}">Pack my box with five dozen liquor jugs</span>
+<span class="light-line-numbers">4</span>
+<span class="light-line-numbers">5</span>    //  The four boxing wizards jump
+<span class="light-line-numbers">6</span>    #include &lt;stdio.h&gt; // &lt;= quickly.
+<span class="light-line-numbers">7</span>    int main(int argc, char **argv) {
+<span class="light-line-numbers">8</span>        long il1[]={1-2/3.4,5+6==7/8};
+<span class="light-line-numbers">9</span>        int OxFaced=0xBAD||&quot;[{(CQUINE&quot;;
+<span class="light-line-numbers">10</span>       unsigned O0,l1,Z2,S5,G6,B8__XY;
+<span class="light-line-numbers">11</span>       printf(&quot;@$Hamburgefo%c`&quot;,&#39;\n&#39;);
+<span class="light-line-numbers">12</span>
+<span class="light-line-numbers">13</span>       return ~7&amp;8^9?0:l1|!&quot;j-&gt;k+=*w&quot;;
+<span class="light-line-numbers">14</span>   }</code></pre>
+
+        <h2 class="section-header">
+            <a class="btn-flat btn-large teal lighten-5">Post {{ size }}</a>
+        </h2>
+        <pre class="size{{ size }} light-code"><code class="specimen-post-{{ variant }}-{{ extension }}"><span class="light-line-numbers">1</span>    // <span class="specimen-post-italic-{{ extension }}">Nymphs blitz quick vex dwarf jog</span>
+<span class="light-line-numbers">2</span>    // <span class="specimen-post-bold-{{ extension }}">Five quacking zephyrs jolt my wax bed</span>
+<span class="light-line-numbers">3</span>    // <span class="specimen-post-bolditalic-{{ extension }}">Pack my box with five dozen liquor jugs</span>
+<span class="light-line-numbers">4</span>
+<span class="light-line-numbers">5</span>    //  The four boxing wizards jump
+<span class="light-line-numbers">6</span>    #include &lt;stdio.h&gt; // &lt;= quickly.
+<span class="light-line-numbers">7</span>    int main(int argc, char **argv) {
+<span class="light-line-numbers">8</span>        long il1[]={1-2/3.4,5+6==7/8};
+<span class="light-line-numbers">9</span>        int OxFaced=0xBAD||&quot;[{(CQUINE&quot;;
+<span class="light-line-numbers">10</span>       unsigned O0,l1,Z2,S5,G6,B8__XY;
+<span class="light-line-numbers">11</span>       printf(&quot;@$Hamburgefo%c`&quot;,&#39;\n&#39;);
+<span class="light-line-numbers">12</span>
+<span class="light-line-numbers">13</span>       return ~7&amp;8^9?0:l1|!&quot;j-&gt;k+=*w&quot;;
+<span class="light-line-numbers">14</span>   }</code></pre>
+
+        <h2 class="section-header">
+            <a class="btn-flat btn-large teal lighten-5">Pre {{ size }}</a>
+        </h2>
+        <pre class="size{{ size }} dark-code"><code class="specimen-pre-{{ variant }}-{{ extension }}"><span class="light-line-numbers">1</span>    // <span class="specimen-pre-italic-{{ extension }}">Nymphs blitz quick vex dwarf jog</span>
+<span class="light-line-numbers">2</span>    // <span class="specimen-pre-bold-{{ extension }}">Five quacking zephyrs jolt my wax bed</span>
+<span class="light-line-numbers">3</span>    // <span class="specimen-pre-bolditalic-{{ extension }}">Pack my box with five dozen liquor jugs</span>
+<span class="light-line-numbers">4</span>
+<span class="light-line-numbers">5</span>    //  The four boxing wizards jump
+<span class="light-line-numbers">6</span>    #include &lt;stdio.h&gt; // &lt;= quickly.
+<span class="light-line-numbers">7</span>    int main(int argc, char **argv) {
+<span class="light-line-numbers">8</span>        long il1[]={1-2/3.4,5+6==7/8};
+<span class="light-line-numbers">9</span>        int OxFaced=0xBAD||&quot;[{(CQUINE&quot;;
+<span class="light-line-numbers">10</span>       unsigned O0,l1,Z2,S5,G6,B8__XY;
+<span class="light-line-numbers">11</span>       printf(&quot;@$Hamburgefo%c`&quot;,&#39;\n&#39;);
+<span class="light-line-numbers">12</span>
+<span class="light-line-numbers">13</span>       return ~7&amp;8^9?0:l1|!&quot;j-&gt;k+=*w&quot;;
+<span class="light-line-numbers">14</span>   }</code></pre>
+
+        <h2 class="section-header">
+            <a class="btn-flat btn-large teal lighten-5">Post {{ size }}</a>
+        </h2>
+        <pre class="size{{ size }} dark-code"><code class="specimen-post-{{ variant }}-{{ extension }}"><span class="light-line-numbers">1</span>    // <span class="specimen-post-italic-{{ extension }}">Nymphs blitz quick vex dwarf jog</span>
+<span class="light-line-numbers">2</span>    // <span class="specimen-post-bold-{{ extension }}">Five quacking zephyrs jolt my wax bed</span>
+<span class="light-line-numbers">3</span>    // <span class="specimen-post-bolditalic-{{ extension }}">Pack my box with five dozen liquor jugs</span>
+<span class="light-line-numbers">4</span>
+<span class="light-line-numbers">5</span>    //  The four boxing wizards jump
+<span class="light-line-numbers">6</span>    #include &lt;stdio.h&gt; // &lt;= quickly.
+<span class="light-line-numbers">7</span>    int main(int argc, char **argv) {
+<span class="light-line-numbers">8</span>        long il1[]={1-2/3.4,5+6==7/8};
+<span class="light-line-numbers">9</span>        int OxFaced=0xBAD||&quot;[{(CQUINE&quot;;
+<span class="light-line-numbers">10</span>       unsigned O0,l1,Z2,S5,G6,B8__XY;
+<span class="light-line-numbers">11</span>       printf(&quot;@$Hamburgefo%c`&quot;,&#39;\n&#39;);
+<span class="light-line-numbers">12</span>
+<span class="light-line-numbers">13</span>       return ~7&amp;8^9?0:l1|!&quot;j-&gt;k+=*w&quot;;
+<span class="light-line-numbers">14</span>   }</code></pre> 
+
+{% endfor %}
+
+
+    </div>
+    <!-- /container -->
+
+    <!-- Materialize JS -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/materialize.min.js') }}"></script>
+    <!-- Other JS -->
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+            $("#textSizeSelector").change(function () {
+                var fontSize = $(this).val();
+                $("head").append('<style type="text/css"></style>');
+                var new_stylesheet = $("head").children(':last');
+                var fontsize_string = "textarea.materialize-textarea{font-size: " + fontSize + "px}";
+                new_stylesheet.html(fontsize_string);
+
+                $('textarea').each(function () {
+                    this.setAttribute('style', 'height:' + (this.scrollHeight) +
+                        'px;overflow-y:hidden;');
+                    this.style.height = 'auto';
+                    this.style.height = (this.scrollHeight) + 'px';
+                });
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
