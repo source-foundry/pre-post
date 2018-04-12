@@ -10,6 +10,8 @@ It supports the following:
 - Pre/post test source code specimen - dark on light
 - Pre/post test source code specimen - light on dark
 
+The text specimens are defined in HTML templates and can be easily modified to address other needs.  See the [Modify Text Specimen]() documentation below for details.
+
 ## Install
 
 Clone the git source repository:
@@ -89,6 +91,12 @@ http://localhost:5000/woff2/regular/36/
 ```
 http://localhost:5000/woff2/bold/24/
 ```
+
+## Modify Text Specimen
+
+This project was created for the development of the [Hack typeface](https://github.com/source-foundry/Hack).  It can be easily adapted to other typeface project needs.  The text specimens are defined in HTML using a Jinja2 template that can be modified and executed using the same approach as described above.  
+
+The Jinja2 template is on the repository path: `templates/specimen.html`.  Please refer to the Jinja2 documentation for additional templating usage details.
 
 ## License
 
