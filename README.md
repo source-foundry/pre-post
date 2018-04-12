@@ -92,11 +92,13 @@ http://localhost:5000/woff2/regular/36/
 http://localhost:5000/woff2/bold/24/
 ```
 
-## Modify Text Specimen
+## Modify Template for Other Projects
 
 This project was created for the development of the [Hack typeface](https://github.com/source-foundry/Hack).  It can be easily adapted to other typeface project needs.  The text specimens are defined in HTML using a Jinja2 template.  This template can be edited and rendered with the approach  described above.
 
 The Jinja2 template is on the repository path: `templates/specimen.html`.  Please refer to the Jinja2 documentation for additional details in order to address any modification needs.
+
+The web fonts (including web font paths) are defined in the CSS file located on the repository path `static/css/app.css`.  Change all Hack-specific values to appropriate paths for your web fonts. 
 
 ## License
 
