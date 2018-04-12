@@ -14,6 +14,12 @@ The text specimens are defined in HTML templates and can be easily modified to a
 
 ## Install
 
+Install the Flask and Jinja2 Python dependencies with the following:
+
+```
+$ pip install flask jinja2
+```
+
 Clone the git source repository:
 
 ```
