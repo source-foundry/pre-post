@@ -1,2 +1,98 @@
 # pre-post
-pre/post web font specimen sheets rendered with Flask + Jinja2
+
+pre-post is a web font specimen sheet that renders two versions of web fonts simultaneously for the comparison of changes in font designs between builds.  It is built with Python, using Flask and Jinja2 templates.
+
+It supports the following:
+
+- Pangram string pre/post with selector for modification of displayed size
+- Pre/post specimens of Basic Latin set glyphs
+- Pre/post waterfall of Basic Latin alphabetic and numeral glyphs
+- Pre/post test source code specimen - dark on light
+- Pre/post test source code specimen - light on dark
+
+## Install
+
+Clone the git source repository:
+
+```
+$ git clone https://github.com/source-foundry/pre-post.git
+```
+
+Navigate to the pre-post directory:
+
+```
+$ cd pre-post
+```
+
+## Usage
+
+#### Add fonts for comparison
+
+Place the "pre" font version files in the directory on the path `static/fonts/pre`.  Place the "post" font version files in the directory on the path `static/fonts/post`.
+
+#### Start Flask server
+
+Start the Flask server with the shell script included in the source repository:
+
+```
+$ ./run.sh
+```
+
+The server runs on the URL `http://localhost:5000`
+
+#### Define your font comparisons in the URL
+
+The URL string can be used to define font variants and sizes for comparison using the following syntax:
+
+```
+http://localhost:5000/[woff|woff2]/(variant)/(size)
+```
+
+Variant is an optional value.  The regular variant is displayed by default when variant is not specified.  
+
+Size is an optional value.  A range of sizes that include 8, 9, 10, 11, 12, 13, 14, 16, 20, 24, 30, 36 are displayed by default.
+
+#### Define variant
+
+Define other variants in the URL as follows (woff2 builds shown, replace with `woff` for woff builds):
+
+##### Bold variant
+
+```
+http://localhost:5000/woff2/bold/
+```
+
+##### Italic variant
+
+```
+http://localhost:5000/woff2/italic/
+```
+
+##### Bold italic variant
+
+```
+http://localhost:5000/woff2/bolditalic/
+```
+
+#### Define size
+
+Add a font size to your URL to exclude all other default sizes in the specimen.  Acceptable values include 8, 9, 10, 11, 12, 13, 14, 16, 20, 24, 30, 36, 48, 60, 72, 90.
+
+##### Display regular variant at size 36
+
+```
+http://localhost:5000/woff2/regular/36/
+```
+
+##### Display bold variant at size 24
+
+```
+http://localhost:5000/woff2/bold/24/
+```
+
+## License
+
+[MIT License](LICENSE)
+
+
+
