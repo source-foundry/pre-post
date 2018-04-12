@@ -1,6 +1,6 @@
 # pre-post
 
-pre-post is a web font specimen sheet that renders two versions of web fonts simultaneously for the comparison of changes in font designs between builds.  It is built with Python, using Flask and Jinja2 templates.
+pre-post is a web font specimen sheet that renders two versions of web fonts simultaneously for the comparison of changes in font designs between builds.  It is built with Flask + Jinja2 templates (Python).
 
 It supports the following:
 
