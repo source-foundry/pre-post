@@ -94,9 +94,9 @@ http://localhost:5000/woff2/bold/24/
 
 ## Modify Text Specimen
 
-This project was created for the development of the [Hack typeface](https://github.com/source-foundry/Hack).  It can be easily adapted to other typeface project needs.  The text specimens are defined in HTML using a Jinja2 template that can be modified and executed using the same approach as described above.  
+This project was created for the development of the [Hack typeface](https://github.com/source-foundry/Hack).  It can be easily adapted to other typeface project needs.  The text specimens are defined in HTML using a Jinja2 template.  This template can be edited and rendered with the approach  described above.
 
-The Jinja2 template is on the repository path: `templates/specimen.html`.  Please refer to the Jinja2 documentation for additional templating usage details.
+The Jinja2 template is on the repository path: `templates/specimen.html`.  Please refer to the Jinja2 documentation for additional details in order to address any modification needs.
 
 ## License
 
