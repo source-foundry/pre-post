@@ -4,7 +4,7 @@ pre-post is a web font specimen sheet that renders two versions of web fonts sim
 
 It supports the following:
 
-- Pangram string pre/post with selector for modification of displayed size
+- Pre/post pangram string with selector for modification of displayed text size
 - Pre/post specimens of Basic Latin set glyphs
 - Pre/post waterfall of Basic Latin alphabetic and numeral glyphs
 - Pre/post test source code specimen - dark on light
