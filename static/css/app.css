@@ -1,0 +1,236 @@
+
+/* Hack Bold */
+@font-face {
+    font-family: 'hackbold_pre_woff';
+    src: url('../fonts/pre/hack-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackbold_post_woff';
+    src: url('../fonts/post/hack-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackbold_pre_woff2';
+    src: url('../fonts/pre/hack-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackbold_post_woff2';
+    src: url('../fonts/post/hack-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Hack Bold Italic */
+
+@font-face {
+    font-family: 'hackbolditalic_pre_woff';
+    src: url('../fonts/pre/hack-bolditalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackbolditalic_post_woff';
+    src: url('../fonts/post/hack-bolditalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackbolditalic_pre_woff2';
+    src: url('../fonts/pre/hack-bolditalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackbolditalic_post_woff2';
+    src: url('../fonts/post/hack-bolditalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Hack Regular */
+
+
+@font-face {
+    font-family: 'hackregular_pre_woff';
+    src: url('../fonts/pre/hack-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackregular_post_woff';
+    src: url('../fonts/post/hack-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackregular_pre_woff2';
+    src: url('../fonts/pre/hack-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackregular_post_woff2';
+    src: url('../fonts/post/hack-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Hack Italic */
+
+@font-face {
+    font-family: 'hackitalic_pre_woff';
+    src: url('../fonts/pre/hack-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackitalic_post_woff';
+    src: url('../fonts/post/hack-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackitalic_pre_woff2';
+    src: url('../fonts/pre/hack-italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackitalic_post_woff2';
+    src: url('../fonts/post/hack-italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.specimen-pre-regular-woff { font-family: 'hackregular_pre_woff'; }
+.specimen-pre-regular-woff2 { font-family: 'hackregular_pre_woff2'; }
+.specimen-post-regular-woff { font-family: 'hackregular_post_woff'; }
+.specimen-post-regular-woff2 { font-family: 'hackregular_post_woff2'; }
+
+.specimen-pre-italic-woff { font-family: 'hackitalic_pre_woff'; }
+.specimen-pre-italic-woff2 { font-family: 'hackitalic_pre_woff2'; }
+.specimen-post-italic-woff { font-family: 'hackitalic_post_woff'; }
+.specimen-post-italic-woff2 { font-family: 'hackitalic_post_woff2'; }
+
+.specimen-pre-bold-woff { font-family: 'hackbold_pre_woff'; }
+.specimen-pre-bold-woff2 { font-family: 'hackbold_pre_woff2'; }
+.specimen-post-bold-woff { font-family: 'hackbold_post_woff'; }
+.specimen-post-bold-woff2 { font-family: 'hackbold_post_woff2'; }
+
+.specimen-pre-bolditalic-woff { font-family: 'hackbolditalic_pre_woff'; }
+.specimen-pre-bolditalic-woff2 { font-family: 'hackbolditalic_pre_woff2'; }
+.specimen-post-bolditalic-woff { font-family: 'hackbolditalic_post_woff'; }
+.specimen-post-bolditalic-woff2 { font-family: 'hackbolditalic_post_woff2'; }
+
+
+.huge {
+	font-size: 300px;
+	line-height: 1em;
+	padding: 0;
+	letter-spacing: -.02em;
+	overflow: hidden;
+}
+
+.title-size { font-size: 100px; }
+.tagline-size { font-size: 48px;}
+
+.section-header { border-bottom: solid 1px #e5e5e5; margin-bottom: 25px;}
+
+.space-above { margin-top: 100px !important; }
+
+.space-below { margin-bottom: 100px !important; }
+
+
+.sample_table td {
+	padding-top: 3px;
+	padding-bottom:5px;
+	padding-left: 5px;
+	vertical-align: middle;
+	line-height: 1.2em;
+}
+
+.sample_table td:first-child {
+	background-color: #FFFF00;
+	text-align: right;
+	padding-right: 5px;
+	padding-left: 0;
+	padding: 5px;
+	font: 11px/12px "Courier New", Courier, monospaced;
+}
+
+.dark-code{
+    background-color: #292C34 !important;
+    color: #B3B9C5 !important;
+    padding: 10px;
+}
+
+.dark-line-numbers {
+    color: #595959 !important;
+}
+
+.light-code{
+    background-color: #FAFAFA !important;
+    color: #24292E !important;
+    padding: 10px;
+}
+
+.light-line-numbers {
+    color: #BEC0C1 !important;
+}
+
+
+.size8{ font-size: 8px;}
+.size9{ font-size: 9px; }
+.size10{ font-size: 10px; }
+.size11{ font-size: 11px; }
+.size12{ font-size: 12px; }
+.size13{ font-size: 13px; }
+.size14{ font-size: 14px; }
+.size16{ font-size: 16px; }
+.size18{ font-size: 18px; }
+.size20{ font-size: 20px; }
+.size24{ font-size: 24px; }
+.size30{ font-size: 30px; }
+.size36{ font-size: 36px; }
+.size48{ font-size: 48px; }
+.size60{ font-size: 60px; }
+.size72{ font-size: 72px; }
+.size90{ font-size: 90px; }
+
+textarea.materialize-textarea {
+    font-size: 12px;
+}
